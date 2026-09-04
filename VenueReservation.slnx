@@ -1,3 +1,9 @@
 <Solution>
-  <Project Path="VenueReservation/VenueReservation.csproj" />
+  <Folder Name="/Solution Items/">
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="VenueReservation.Api/VenueReservation.Api.csproj" />
+  <Project Path="VenueReservation.Application/VenueReservation.Application.csproj" Id="679e5b40-7674-458e-b9aa-808ed9882bd8" />
+  <Project Path="VenueReservation.Domain/VenueReservation.Domain.csproj" Id="34792e0f-e2a7-4cc2-8378-daffb1ee18a6" />
+  <Project Path="VenueReservation.Infrastructure/VenueReservation.Infrastructure.csproj" Id="1e89384b-d568-4992-adb1-ead14881024a" />
 </Solution>

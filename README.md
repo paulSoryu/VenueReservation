@@ -138,12 +138,12 @@ All endpoints are under `/api`. Interactive Swagger UI is available at `/swagger
 
 ```bash
 git clone <repository-url>
-cd VenueReservation
+cd VenueReservation.Api
 
 # Point the connection string at your own PostgreSQL instance (see Configuration below),
 # then restore and run the API project:
 dotnet restore
-dotnet run --project VenueReservation
+dotnet run --project VenueReservation.Api
 ```
 
 On startup, the API automatically applies pending EF Core migrations and seeds three demo venues (with default services) if the database is empty — no manual setup required beyond having PostgreSQL reachable.
@@ -152,7 +152,7 @@ Once running, open `/swagger` to explore and try the endpoints.
 
 ## Configuration
 
-Connection settings live in `VenueReservation/appsettings.json` under `ConnectionStrings:PostgresConnection`.
+Connection settings live in `VenueReservation.Api/appsettings.json` under `ConnectionStrings:PostgresConnection`.
 
 ```json
 {
@@ -171,7 +171,7 @@ To add a new migration manually:
 ```bash
 dotnet ef migrations add <MigrationName> \
   --project VenueReservation.Infrastructure \
-  --startup-project VenueReservation
+  --startup-project VenueReservation.Api
 ```
 
 ## Error Handling

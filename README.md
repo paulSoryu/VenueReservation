@@ -189,6 +189,5 @@ Unhandled exceptions are additionally caught globally by `GlobalExceptionHandler
 
 ## Roadmap / Known Gaps
 
-- `CreateServiceRequest` / `UpdateServiceRequest` DTOs exist but there are currently no standalone `Services` endpoints — services are only managed inline through venue create/update.
 - No authentication/authorization is currently wired up.
 - No automated test project is present in the solution yet.

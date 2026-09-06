@@ -27,7 +27,7 @@ The solution follows **Clean Architecture** with a strict dependency direction (
 VenueReservation.Domain          → Entities, value objects, domain errors — no external dependencies
 VenueReservation.Application     → Commands/Queries, handlers, validators, repository interfaces
 VenueReservation.Infrastructure  → EF Core DbContext, repositories, migrations, DI wiring
-VenueReservation (Api)           → Controllers, request/response DTOs, mapping, composition root
+VenueReservation.Api             → Controllers, request/response DTOs, mapping, composition root
 ```
 
 Requests flow as: **Controller → MediatR Command/Query → Handler → Domain → Repository (EF Core) → PostgreSQL**, with **FluentValidation** running as a MediatR pipeline behavior before any handler executes, and a `Result` / `Result<T>` object propagating success/failure without throwing exceptions for expected business-rule violations.

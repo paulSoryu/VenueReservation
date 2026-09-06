@@ -42,7 +42,7 @@ Requests flow as: **Controller → MediatR Command/Query → Handler → Domain 
 | CQRS / Mediator | MediatR 14 |
 | Validation | FluentValidation 12 (as a MediatR pipeline behavior) |
 | Object Mapping | Mapster |
-| API Docs | Swashbuckle (Swagger / OpenAPI) — available in the `Development` environment |
+| API Docs | Swashbuckle (Swagger) — available in the `Development` environment |
 | Error Handling | `IExceptionHandler` (`GlobalExceptionHandler`) + RFC 7807 `ProblemDetails` |
 
 ## Project Structure
